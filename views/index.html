@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tejas Ahuja | <%= title %></title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href = "/stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href = "/stylesheets/navbar-custom.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/home.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+  <script src = "/javascripts/home.js"></script>
+  
+
+</head>
+<body>
+  <header>
+ <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Tejas Ahuja</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#" class = "active">Home</a></li>
+                    <li><a href="academics">Academics</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Résumé</a></li>
+                </ul>
+            </div>
+            <script>
+              $(".navlinks").on({
+                    mouseenter: function () {
+                      $('.active').addClass('unactive');
+                      $('.active').removeClass('active');
+                    },
+                    mouseleave: function () {
+                      $('.unactive').addClass('active');
+                      $('.unactive').removeClass('unactive');
+                    }
+                });
+            </script>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/javascripts/academics.js"></script>
+
+     <div class="main">
+         <h1 class="main-header">Tejas Ahuja</h1>
+         <ul class="main-social-ul">
+            <li><a href="#" class="main-social-icon">
+                    <i class="fab fa-github"></i></a>
+            </li>
+            <li><a href="#" class="main-social-icon">
+                    <i class="fab fa-linkedin-in"></i></a>
+            </li>
+
+            <li><a href="#" class="main-social-icon">
+                    <i class="fab fa-instagram"></i></a>
+            </li>
+
+             <li><a href="#n" class="main-social-icon">
+                    <i class="fab fa-twitter"></i></a>
+            </li>
+
+            <li><a href="mailto:ahujatejas06@gmail.com" class="main-social-icon">
+                    <i class="far fa-envelope"></i></a>
+            </li>
+
+            </ul>
+
+            <div class="circle-bkg">
+              <div class='circle one'></div>
+              <div class='circle two'></div>
+              <div class='circle three'></div>
+              <div class='circle four'></div>
+            </div>
+          </div>
+          <div id="button" class="scroll">
+            <a href="#home"><span></span></a>
+          </div>
+
+          <div class = "coverbg"></div>
+          </header>
+           <!-- black bar daalne wali JS-->
+          <script>
+            let height = $('.main').height() - $('.nav').height() - 35;
+            $('#button').click(function() {
+
+            });
+              $(window).scroll(function() {
+                var fade = 1-$(document).scrollTop()*2/$('.main').height();
+                if ($(document).scrollTop() > height) {
+                    $('.nav').addClass('affix');
+                } else {
+                    $('.nav').removeClass('affix');
+                       }
+                $('.main-header').css('opacity', fade);
+                $('.main-social-ul').css('opacity', fade);
+                
+                        });
+          </script>
+          <section id = "home">
+            <div class = "grid">
+
+                <div class="grid-samaan image">
+                    <img src="https://images.pexels.com/photos/1936936/pexels-photo-1936936.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                </div>
+                <div class="grid-samaan hey">
+                  <h2>Hey...</h2>
+                  <p>I am <b>Tejas Ahuja</b></p>
+                  <p>And i love developing things</p>
+
+                </div>
+                <div class="grid-samaan hey">2</div>
+            </div>
+          </section>
+    </body>
+</html>
