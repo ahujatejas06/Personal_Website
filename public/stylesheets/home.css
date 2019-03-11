@@ -251,3 +251,8 @@ body {
     opacity: 0;
   }
 }
+@media screen and (max-width:768px) {
+  .nav div.show_list {
+        margin-top:-3px !important;
+    }
+}
