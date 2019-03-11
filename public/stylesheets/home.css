@@ -255,4 +255,12 @@ body {
   .nav div.show_list {
         margin-top:-3px !important;
     }
+  }
+  @media screen and (max-width: 768px) {
+    .nav div.logo {
+    padding-left: 10px !important;
+  }
+  #button a span{
+    margin-bottom: 75px;
+  }
 }
