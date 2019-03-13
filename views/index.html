@@ -27,18 +27,6 @@
                     <li><a href="/resume">Résumé</a></li>
                 </ul>
             </div>
-            <script>
-              $(".navlinks").on({
-                    mouseenter: function () {
-                      $('.active').addClass('unactive');
-                      $('.active').removeClass('active');
-                    },
-                    mouseleave: function () {
-                      $('.unactive').addClass('active');
-                      $('.unactive').removeClass('unactive');
-                    }
-                });
-            </script>
             <span class="navTrigger">
                 <i></i>
                 <i></i>
@@ -86,25 +74,6 @@
           </div>
 
           <div class = "coverbg"></div>
-          
-           <!-- black bar daalne wali JS-->
-          <script>
-            let height = $('.main').height() - $('.nav').height() - 35;
-            $('#button').click(function() {
-
-            });
-              $(window).scroll(function() {
-                var fade = 1-$(document).scrollTop()*2/$('.main').height();
-                if ($(document).scrollTop() > height) {
-                    $('.nav').addClass('affix');
-                } else {
-                    $('.nav').removeClass('affix');
-                       }
-                $('.main-header').css('opacity', fade);
-                $('.main-social-ul').css('opacity', fade);
-                
-                        });
-          </script>
           <section id = "home">
             <div class = "grid">
 
@@ -115,11 +84,26 @@
                   <h2>Hey...</h2>
                   <p>I am <b>Tejas Ahuja</b></p>
                   <p>And i love developing things</p>
-
                 </div>
-                <div class="grid-samaan hey">2</div>
             </div>
           </section>
+          <section class = "thingsdo">
+            <div>
+            <h2>So, What do I do?</h2>
+            <ul>
+              <li>Programmer</li>
+              <li>Robot-Maker</li>
+              <li>Front-end web developer</li>
+              <li>Audio/Video Editor</li>
+              <li>Graphic Designer</li>
+              <li>Drummer</li>
+              <li>Gamer</li>
+              <li>Member of the <b><a href = "https://www.byteclub.in/">Byte Club</a></b></li>
+              <li>Developer</li>
+            </ul>
+          </div>
+          </section>
+          <section class = "waste"></section>
           <script src = "/javascripts/home.js"></script>
     </body>
 </html>

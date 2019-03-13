@@ -1,10 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 body {
   box-sizing: border-box;
-  
   font-family: "Quicksand", sans-serif;
   text-align: center;
   overflow-x: hidden;
+  transition: all 1s;
+}
+.waste {
+  height: 100vh;
+}
+.colorblue {
+
+  background-color:rgba(0,180,239,1.1) ;
+}
+.thingsdo {
+  transition: all 0.5s;
+  position: relative;
+  top: 0;
+
+}
+.thingsdo > div {
+  margin-top: 20rem;
+}
+.thingsdo h2 {
+  font-size: 3.5rem;
+}
+.thingsdo ul {
+  margin-top: -20px;
+  list-style: none;
+  font-size: 25px;
+  padding: 0 38px 0 38px;
+}
+.thingsdo ul li {
+  margin-top: 7.5px;
+  font-weight: 500;
+}
+.colorwhite {
+  color: white;
 }
 /*grid*/
 .grid {
@@ -16,10 +48,10 @@ body {
 
 }
 .grid-samaan {
-  height:20rem;
+  height:auto;
+  width: 100%;
 }
 .image > img {
-  size:10%;
   width:100%;
   height:100%;
   padding:10px;
@@ -27,7 +59,7 @@ body {
   border:solid 1px #000;
 }
 .image > img:hover {
-  transform:translate3d(100px);
+  
 }
 .image {
   margin:50px 20px 0 20px;
@@ -35,6 +67,7 @@ body {
 .hey > h2 {
   font-size: 4rem;
   margin:4px;
+  margin-top: 6.5rem;
 }
 .hey > p {
   font-size:2rem;
@@ -51,7 +84,7 @@ body {
   width:100vw;
 }
 #home {
-	height:100vh;
+	height:auto;
 	width:100%;
 	position:relative;
 	background-color: #;
