@@ -47,8 +47,8 @@ $(document).ready(function(){
               $(window).scroll(function() {
                 let fade = 1-$(document).scrollTop()*2/$('.main').height();
                 let height = $('.main').height() - $('.nav').height() - 35;
-                let height_color1 = $('.main').height() + ($('.thingsdo').height()/2);
-                let remove_color1 = $('.main').height() + $('.thingsdo').height() + 700;
+                // let height_color1 = $('.main').height() + ($('.thingsdo').height()/2);
+                // let remove_color1 = $('.main').height() + $('.thingsdo').height() + 700;
 
 
                 if ($(document).scrollTop() > height) {
@@ -58,16 +58,16 @@ $(document).ready(function(){
                   }
 
 
-                if($(document).scrollTop() > height_color1 && $(document).scrollTop() < remove_color1) {
-                  $('.thingsdo').addClass('colorwhite');
-                  $('body').addClass('colorblue');
+                // if($(document).scrollTop() > height_color1 && $(document).scrollTop() < remove_color1) {
+                //   $('.thingsdo').addClass('colorwhite');
+                //   $('body').addClass('colorblue');
 
 
-                } else {
-                  $('.thingsdo').removeClass('colorwhite');
-                  $('body').removeClass('colorblue');
+                // } else {
+                //   $('.thingsdo').removeClass('colorwhite');
+                //   $('body').removeClass('colorblue');
 
-                }
+                // }
 
                 $('.main-header').css('opacity', fade);
                 $('.main-social-ul').css('opacity', fade);

@@ -4,9 +4,29 @@ body {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   overflow-x: hidden;
-  transition: all 1s;
 }
-.waste {
+.thingsdo {
+  position: relative;
+  top: 0;
+
+}
+.thingsdo h2 {
+  font-size: 3.5rem;
+}
+.thingsdo ul {
+  margin-top: -20px;
+  list-style: none;
+  font-size: 25px;
+  padding: 0 38px 0 38px;
+}
+.thingsdo ul li {
+  margin-top: 7.5px;
+  font-weight: 500;
+}
+
+
+/* color change css*/
+/* .waste {
   height: 100vh;
 }
 .colorblue {
@@ -37,7 +57,7 @@ body {
 }
 .colorwhite {
   color: white;
-}
+} */
 /*grid*/
 .grid {
   display:grid;
