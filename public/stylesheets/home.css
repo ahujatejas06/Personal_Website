@@ -11,7 +11,7 @@ body {
 
 }
 .thingsdo h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .thingsdo ul {
   margin-top: -20px;
@@ -24,6 +24,54 @@ body {
   font-weight: 500;
 }
 
+/* Languages section */
+#languages {
+  margin-top: 100px;
+  align-content: center;
+}
+#languages h1 {
+  font-size: 3rem;
+}
+.computer {
+  display: block;
+  max-width: 720px;
+  /* margin:0 12rem 0 12rem; */
+  text-align: center;
+}
+.computer h3 {
+  font-size: 2rem;
+}
+.computer-languages {
+  float: left;
+  margin-left: 15rem;
+  margin-right: 1rem;
+}
+.computer dl {
+  list-style: none;
+  font-size: 25px;
+  /* padding: 0 38px 0 38px; */
+
+}
+.computer dl dt {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.computer dl dd {
+  height:7px ;
+  border-radius: 4px;
+  margin-left: -0.05rem;
+  /* width: 60%; */
+  left: 0;
+  padding: 0;
+  margin-top: 10px;
+  background-color: #000;
+}
+.human-languages {
+ float: right;
+ margin-right: 15rem;
+ margin-left: 1rem;
+}
+/* Languages section end */
 
 /* color change css*/
 /* .waste {

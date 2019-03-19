@@ -5,7 +5,9 @@ $('.navTrigger').click(function () {
     $("#mainListDiv").fadeIn();
 
 });
+
 $(document).ready(function(){
+  setPercent();
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -73,3 +75,11 @@ $(document).ready(function(){
                 $('.main-social-ul').css('opacity', fade);
                 
                         });
+function setPercent () {
+  $('.kuchhbhi').each(function() {
+      value = $(this).data('setpercent');
+      color = $(this).data('color');
+      $(this).css('width',value);
+      $(this).css('background-color',color);
+  });
+}
