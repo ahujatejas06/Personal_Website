@@ -28,28 +28,41 @@ body {
 #languages {
   margin-top: 100px;
   align-content: center;
+  /* max-width: 750px; */
+  text-align: center;
 }
 #languages h1 {
   font-size: 3rem;
 }
+#languages div {
+  display: inline-block;
+}
+.kuchhbhi {
+  z-index: 2;
+  opacity: 0.99;
+}
+
+.pushup {
+  /* position: absolute !important; */
+  z-index: 3 !important;
+  margin-top: -7px !important;
+  opacity: 1;
+}
 .computer {
   display: block;
-  max-width: 720px;
+  width: 350px;
+  
+  margin: 0 30px 0 30px;
   /* margin:0 12rem 0 12rem; */
   text-align: center;
 }
 .computer h3 {
   font-size: 2rem;
 }
-.computer-languages {
-  float: left;
-  margin-left: 15rem;
-  margin-right: 1rem;
-}
+
 .computer dl {
   list-style: none;
   font-size: 25px;
-  /* padding: 0 38px 0 38px; */
 
 }
 .computer dl dt {
@@ -60,16 +73,25 @@ body {
   height:7px ;
   border-radius: 4px;
   margin-left: -0.05rem;
-  /* width: 60%; */
   left: 0;
   padding: 0;
   margin-top: 10px;
-  background-color: #000;
 }
-.human-languages {
+/* .human-languages {
  float: right;
- margin-right: 15rem;
- margin-left: 1rem;
+} */
+@media screen and (min-width: 850px) {
+  .human-languages {
+    float: right;
+  }
+  .computer-languages {
+  float: left;
+  }
+}
+@media screen and (max-width: 720px) {
+  .computer {
+    margin: 0 auto;
+  }
 }
 /* Languages section end */
 
