@@ -5,6 +5,9 @@ body {
   text-align: center;
   overflow-x: hidden;
 }
+h1 {
+  font-size: 3rem;
+}
 .thingsdo {
   position: relative;
   top: 0;
@@ -28,7 +31,6 @@ body {
 #languages {
   margin-top: 100px;
   align-content: center;
-  /* max-width: 750px; */
   text-align: center;
 }
 #languages h1 {
@@ -43,15 +45,13 @@ body {
 }
 
 .pushup {
-  /* position: absolute !important; */
   z-index: 3 !important;
   margin-top: -7px !important;
   opacity: 1;
 }
 .computer {
   display: block;
-  width: 350px;
-  
+  /* width: 350px; */
   margin: 0 30px 0 30px;
   /* margin:0 12rem 0 12rem; */
   text-align: center;
@@ -77,9 +77,6 @@ body {
   padding: 0;
   margin-top: 10px;
 }
-/* .human-languages {
- float: right;
-} */
 @media screen and (min-width: 850px) {
   .human-languages {
     float: right;
@@ -90,11 +87,62 @@ body {
 }
 @media screen and (max-width: 720px) {
   .computer {
+    text-align: center;
     margin: 0 auto;
+    max-width: 350px !important;
+  }
+}
+@media screen and (min-width: 720px) {
+  .computer {
+    width: 350px;
   }
 }
 /* Languages section end */
-
+/* Education section begin */
+#education { 
+  width: auto; 
+  font-size: 3rem; 
+  text-align: center; 
+}
+section#education i.fas {
+ color: #0084FF; 
+ font-size: 40px;
+ 
+}
+section#education span { 
+  display: inline-block; 
+  font-size: 20px; 
+  color: black; 
+  line-height: 40px; 
+   
+}
+section#education div { 
+  font-size: 20px; 
+  color: black; 
+  line-height: 40px; 
+   
+}
+section#education div.sch { 
+  font-size: 25px; 
+  margin: 0; 
+  font-family: "Quicksand", sans-serif;
+  margin-left: 0 !important; 
+}
+section#education div.sch a { 
+  text-decoration: none; 
+  color: black; 
+  font-weight: 550; 
+}
+.scl {
+  display: inline-block;
+}
+.scl1 {
+  float: left;
+}
+.scl2 {
+  float: right;
+}
+/* Education section end */
 /* color change css*/
 /* .waste {
   height: 100vh;

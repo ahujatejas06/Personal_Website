@@ -7,7 +7,7 @@ $('.navTrigger').click(function () {
 });
 
 $(document).ready(function(){
-  setPercent();
+
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -30,7 +30,7 @@ $(document).ready(function(){
     $('.bar').toggleClass('toggle-open');
     $('.close').removeClass('close-active');
   });
-    
+  setPercent();
 });
  $(".navlinks").on({
                     mouseenter: function () {
@@ -76,10 +76,14 @@ $(document).ready(function(){
                 
                         });
 function setPercent () {
+  if($(document).width() <= 720) {
+      let widthhuman = $(".human-languages").width();
+      $(".computer-languages").css("width", widthhuman);
+    }
   $('.kuchhbhi').each(function() {
-      value = $(this).data('setpercent');
-      color = $(this).data('color');
+      let value = $(this).data('setpercent');
+      let color = $(this).data('color');
       $(this).css('width',value);
-      $(this).css('background-color',color);
+      $(this).css('background',color);
   });
 }
