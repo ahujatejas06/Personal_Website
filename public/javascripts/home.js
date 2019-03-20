@@ -76,7 +76,7 @@ $(document).ready(function(){
                 
                         });
 function setPercent () {
-  if($(document).width() <= 720) {
+  if($(document).width() < 500) {
       let widthhuman = $(".human-languages").width();
       $(".computer-languages").css("width", widthhuman);
     }

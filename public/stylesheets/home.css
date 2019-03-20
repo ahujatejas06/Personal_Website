@@ -85,7 +85,7 @@ h1 {
   float: left;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 500px) {
   .computer {
     text-align: center;
     margin: 0 auto;
