@@ -85,7 +85,7 @@ h1 {
   float: left;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .computer {
     text-align: center;
     margin: 0 auto;
@@ -100,90 +100,59 @@ h1 {
 /* Languages section end */
 /* Education section begin */
 #education { 
-  width: auto; 
+  width: 100%; 
   font-size: 3rem; 
   text-align: center; 
 }
-section#education i.fas {
- color: #0084FF; 
- font-size: 40px;
- 
+.center {
+ display: inline-block;
 }
-section#education span { 
-  display: inline-block; 
-  font-size: 20px; 
-  color: black; 
-  line-height: 40px; 
-   
+.grid-education {
+  display: block;
+  grid-template-columns:1fr 1fr ;
+  grid-template-rows: auto;
 }
-section#education div { 
-  font-size: 20px; 
-  color: black; 
-  line-height: 40px; 
-   
+.grid-education h5{
+  font-size: 1.75rem;
+  margin: 5px auto;
 }
-section#education div.sch { 
-  font-size: 25px; 
-  margin: 0; 
-  font-family: "Quicksand", sans-serif;
-  margin-left: 0 !important; 
+.grid-education h6{
+  font-size: 1.25rem;
+  margin: 5px auto;
 }
-section#education div.sch a { 
-  text-decoration: none; 
-  color: black; 
-  font-weight: 550; 
+
+.school {
+  margin: 40px auto auto auto;
+/*   border: 1px solid #0084FF;
+  border-radius: 20px; */
 }
-.scl {
-  display: inline-block;
+@media screen and (min-width: 720px) {
+  .grid-education {
+    display: grid !important;
+  }
+  .school {
+   margin: auto 50px;
+  }
 }
-.scl1 {
-  float: left;
+.school a{
+  text-decoration: none;
+  color: #0084FF;
 }
-.scl2 {
-  float: right;
+.school span{
+  text-decoration: none;
+  color: purple;
 }
 /* Education section end */
-/* color change css*/
-/* .waste {
-  height: 100vh;
-}
-.colorblue {
 
-  background-color:rgba(0,180,239,1.1) ;
-}
-.thingsdo {
-  transition: all 0.5s;
-  position: relative;
-  top: 0;
-
-}
-.thingsdo > div {
-  margin-top: 20rem;
-}
-.thingsdo h2 {
-  font-size: 3.5rem;
-}
-.thingsdo ul {
-  margin-top: -20px;
-  list-style: none;
-  font-size: 25px;
-  padding: 0 38px 0 38px;
-}
-.thingsdo ul li {
-  margin-top: 7.5px;
-  font-weight: 500;
-}
-.colorwhite {
-  color: white;
-} */
 /*grid*/
 .grid {
+  border:black 5px;
+  width:100%;
+}
+.grid-home {
   display:grid;
   grid-template-columns:2fr 3fr;
   grid-template-rows:auto;
-  border:black 5px;
-  width:100%;
-
 }
 .grid-samaan {
   height:auto;
