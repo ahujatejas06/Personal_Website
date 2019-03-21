@@ -3,7 +3,14 @@ $('.navTrigger').click(function () {
     console.log("Clicked menu");
     $("#mainListDiv").toggleClass("show_list");
     $("#mainListDiv").fadeIn();
-
+    let height = $('.main').height() - $('.nav').height() - 35;
+    if($(document).scrollTop() <= height) {
+      if($("#mainListDiv").hasClass("show_list")) {
+        $('.nav').addClass('affix');
+      } else {
+        $('.nav').removeClass('affix');
+      }
+    } 
 });
 
 $(document).ready(function(){
