@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var minify = require('express-minify');
 var indexRouter = require('./routes/index');
 var academicsRouter = require('./routes/academics');
 
@@ -13,13 +13,24 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'pug');
-
+//middleware to compress CSS
+app.use(minify({
+	cache: false,
+	uglifyJsModule: null,
+	errorHandler: null,
+	jsMatch: false,
+	cssMatch: /css/,
+	jsonMatch: false,
+	sassMatch: false,
+	lessMatch: false,
+	stylusMatch: false,
+	coffeeScriptMatch: false,
+}));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', indexRouter);
 app.use('/academics', academicsRouter);
 
