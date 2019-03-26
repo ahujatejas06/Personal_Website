@@ -43,7 +43,7 @@ app.get("/", function(req, res, next) {
 });
 app.get("/academics", function(req, res, next) {
 	res.render("academics", {
-		title: "academics"
+		title: "Academics"
 	})
 });
 // routing end
