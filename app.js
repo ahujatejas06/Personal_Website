@@ -47,6 +47,8 @@ app.get("/academics", function(req, res, next) {
 	})
 });
 // routing end
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

@@ -127,7 +127,7 @@ h1 {
   border-radius: 20px; */
 }
 @media screen and (min-width: 720px) {
-  .grid-education {
+  .grid-education, .grid-home{
     display: grid !important;
   }
   .school {
@@ -143,38 +143,62 @@ h1 {
   color: purple;
 }
 /* Education section end */
+@media screen and (max-width: 720px) {
+  .gird-home > .none {
+    text-align: center !important;
+  }
+  .image, .hey {
+    display: inline-block !important;
+    
 
+  }
+  .hey h2 {
+    margin-top: 10px !important;
+  }
+  .image > img {
+    text-align: center !important;
+    width: 25rem !important;
+    margin: auto !important;
+  }
+}
 /*grid*/
 .grid {
   border:black 5px;
   width:100%;
 }
+  .gird-home > .none {
+    text-align: center !important;
+  }
+  .image, .hey {
+    display: inline-block !important;
+  }
+  .hey {
+    vertical-align: middle;
+    margin: auto 0;
+  }
 .grid-home {
-  display:grid;
-  grid-template-columns:2fr 3fr;
+  display:block;
+  grid-template-columns:3fr 3fr;
   grid-template-rows:auto;
 }
 .grid-samaan {
   height:auto;
+  margin: auto;
   width: 100%;
+}
+.image {
+  width: 75%;
 }
 .image > img {
   width:100%;
   height:100%;
-  padding:10px;
-  margin:10px;
   border:solid 1px #000;
+  margin: auto;
 }
-.image > img:hover {
-  
-}
-.image {
-  margin:50px 20px 0 20px;
-}
+
 .hey > h2 {
   font-size: 4rem;
-  margin:4px;
-  margin-top: 6.5rem;
+  margin: auto;
 }
 .hey > p {
   font-size:2rem;
