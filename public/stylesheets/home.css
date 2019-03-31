@@ -5,6 +5,12 @@ body {
   text-align: center;
   overflow-x: hidden;
 }
+body.lock-position {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  position: relative;
+}
 h1 {
   font-size: 3rem;
 }

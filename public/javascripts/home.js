@@ -4,12 +4,10 @@ $('.navTrigger').click(function () {
     $("#mainListDiv").toggleClass("show_list");
     
     if($("#mainListDiv").hasClass("show_list")) {
-        $('body').css("overflow", "hidden");
-        $('body').css("position", "relative");
+        $("body").addClass("lock-position");
         $("#mainListDiv").fadeIn();
       } else {
-        $('body').css("overflow", "auto");
-        $('body').css("position", "static");
+        $("body").removeClass("lock-position");
         $("#mainListDiv").fadeOut();
       }
     let height = $('.main').height() - $('.nav').height() - 35;
