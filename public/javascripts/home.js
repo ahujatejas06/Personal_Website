@@ -3,6 +3,11 @@ $('.navTrigger').click(function () {
     console.log("Clicked menu");
     $("#mainListDiv").toggleClass("show_list");
     $("#mainListDiv").fadeIn();
+    if($("#mainListDiv").hasClass("show_list")) {
+        $('body').css("overflow-y", "hidden");
+      } else {
+        $('body').css("overflow-y", "auto");
+      }
     let height = $('.main').height() - $('.nav').height() - 35;
     if($(document).scrollTop() <= height) {
       if($("#mainListDiv").hasClass("show_list")) {
