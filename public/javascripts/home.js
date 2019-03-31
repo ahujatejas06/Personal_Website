@@ -2,11 +2,13 @@ $('.navTrigger').click(function () {
     $(this).toggleClass('click');
     console.log("Clicked menu");
     $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
+    
     if($("#mainListDiv").hasClass("show_list")) {
-        $('body').css("overflow-y", "hidden");
+        $('body').css("overflow", "hidden");
+        $("#mainListDiv").fadeIn();
       } else {
-        $('body').css("overflow-y", "auto");
+        $('body').css("overflow", "auto");
+        $("#mainListDiv").fadeOut();
       }
     let height = $('.main').height() - $('.nav').height() - 35;
     if($(document).scrollTop() <= height) {
