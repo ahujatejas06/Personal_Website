@@ -5,9 +5,11 @@ $('.navTrigger').click(function () {
     
     if($("#mainListDiv").hasClass("show_list")) {
         $('body').css("overflow", "hidden");
+        $('body').css("position", "relative");
         $("#mainListDiv").fadeIn();
       } else {
         $('body').css("overflow", "auto");
+        $('body').css("position", "static");
         $("#mainListDiv").fadeOut();
       }
     let height = $('.main').height() - $('.nav').height() - 35;
