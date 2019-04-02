@@ -210,6 +210,40 @@ h1 {
   font-size:2rem;
   margin:7px 0 7px 0;
 }
+/* achievement section start */
+#achievements {
+  text-align: center;
+  width: 100%;
+}
+#achievements ul {
+  list-style: none;
+  transform: translateX(-17.5px);
+  max-width: 1080px;
+}
+#achievements ul li {
+  font-weight: 500;
+  font-size: 1.5rem;
+  height: 2rem;
+  padding: .75rem;
+  transition: all .5s ease;
+  overflow: hidden;
+  border: 2px solid #000;
+  border-bottom: none;
+  border-radius: 10px;
+}
+.ach {
+  font-weight: 300;
+  font-size: 1rem;
+  /* display: none; */
+}
+#achievements ul li:last-child {
+  border: 2px solid #000;
+}
+#achievements ul li:hover {
+  height: 15rem;
+  transition: all .5s ease;
+}
+/* achievement section end */
 /*background cover*/
 .coverbg {
   position:absolute;
