@@ -45,6 +45,7 @@ $(document).ready(function(){
     $('.close').removeClass('close-active');
   });
   setPercent();
+
 });
  $(".navlinks").on({
                     mouseenter: function () {
@@ -72,6 +73,7 @@ $(document).ready(function(){
                 $('.main-social-ul').css('opacity', fade);
                 
                         });
+
 function setPercent () {
   if($('.human-languages').width() < 350) {
       let widthhuman = $(".human-languages").width();
