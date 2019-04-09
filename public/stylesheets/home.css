@@ -11,6 +11,92 @@ body.lock-position {
   overflow-y: hidden;
   position: relative;
 }
+/* achievements new */
+.container_accordion p:last-child, .container_accordion ul:last-child, .container_accordion li:last-child {
+  margin-bottom: 0;
+}
+
+.container_accordion a {
+  color: #00ACC1;
+}
+
+.container_accordion code {
+  background: #ECEFF1;
+}
+
+.container_accordion {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px;
+  font-family: "Quicksand", sans-serif !important
+}
+
+.container_accordion .details-group {
+  border: 1px solid #CFD8DC;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.container_accordion .details {
+  overflow: hidden;
+  border-bottom: 1px solid #CFD8DC;
+  transition: height 300ms ease-in-out;
+}
+.container_accordion .details:last-child {
+  border-bottom: 0;
+}
+.container_accordion .details__summary, .container_accordion .details__content {
+  padding: 24px;
+}
+.container_accordion .details__summary {
+  position: relative;
+  list-style: none;
+  padding-left: 48px;
+  outline: 0;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 300ms ease-in-out;
+}
+[open] > .details__summary {
+  color: #00ACC1;
+}
+.container_accordion .details__summary::-webkit-details-marker {
+  display: none;
+}
+.container_accordion .details__summary::before, .container_accordion .details__summary::after {
+  content: "";
+  position: absolute;
+}
+.container_accordion .details__summary::before {
+  left: 20px;
+  top: 50%;
+  height: 2px;
+  margin-top: -1px;
+  width: 16px;
+  background: #00ACC1;
+}
+.container_accordion .details__summary::after {
+  left: 28px;
+  top: 50%;
+  height: 16px;
+  margin-top: -8px;
+  width: 2px;
+  margin-left: -1px;
+  background: #00ACC1;
+  transition: all 300ms ease-in-out;
+}
+[open] .details__summary::after {
+  opacity: 0;
+  transform: translateY(25%);
+}
+.container_accordion .details__content {
+  padding-top: 0;
+  padding-left: 48px;
+}
+
+/* achievements new end*/
 h1 {
   font-size: 3rem;
 }
@@ -199,6 +285,7 @@ h1 {
   max-width:100%;
   max-height:100%;
   border:solid 1px #000;
+  border-radius: 3%;
   margin: auto;
 }
 
@@ -211,7 +298,7 @@ h1 {
   margin:7px 0 7px 0;
 }
 /* achievement section start */
-#achievements {
+/* #achievements {
   text-align: center;
   width: 100%;
 }
@@ -234,7 +321,6 @@ h1 {
 .ach {
   font-weight: 300;
   font-size: 1rem;
-  /* display: none; */
 }
 #achievements ul li:last-child {
   border: 2px solid #000;
@@ -242,7 +328,7 @@ h1 {
 #achievements ul li:hover {
 
   max-height: 1000px;
-}
+} */
 /* achievement section end */
 /*background cover*/
 .coverbg {
