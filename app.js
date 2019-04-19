@@ -47,6 +47,11 @@ app.get("/academics", function(req, res, next) {
 		title: "Academics"
 	})
 });
+app.get("/projects", function(req, res, next) {
+	res.render("projects", {
+		title: "Projects"
+	})
+});
 // routing end
 
 
