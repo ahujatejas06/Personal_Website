@@ -19,3 +19,53 @@ $('.navTrigger').click(function () {
       }
     } 
 });
+$(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                //console.log("Navbar black ho gya. YAY!!!!!!");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+        $(document).on('ready', function() {
+
+     $(".center").slick({
+
+     dots: true,
+     infinite: true,
+     centerMode: true,
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     arrows: false,
+     verticalSwiping:false,
+     autoplay:true,
+     autoplaySpeed:4000,
+     focusOnSelect:true,
+     pauseOnHover:true,
+
+     responsive: [{
+
+     breakpoint: 1024,
+     settings: {
+          slidesToShow: 2,
+          infinite: true
+     }
+
+}, {
+
+     breakpoint: 600,
+     settings: {
+          slidesToShow: 1,
+          dots: true
+     }
+
+}, {
+
+     breakpoint: 300,
+     settings: "unslick" //destroy slick
+
+}]
+
+});
+
+});
