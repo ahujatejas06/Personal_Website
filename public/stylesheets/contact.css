@@ -34,7 +34,7 @@ body.lock-position {
   height: 75vh;
   display: flex;
   justify-content: center;
-  background: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background: url(https://images.pexels.com/photos/594452/pexels-photo-594452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

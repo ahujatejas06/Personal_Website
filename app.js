@@ -49,7 +49,20 @@ app.get("/academics", function(req, res, next) {
 });
 app.get("/projects", function(req, res, next) {
 	res.render("projects", {
-		title: "Projects"
+		title: "Projects",
+		heading:"My Projects"
+	})
+});
+app.get("/contact", function(req, res, next) {
+	res.render("contact", {
+		title: "Contact",
+		heading:"Contact Me!"
+	})
+});
+app.get("/resume", function(req, res, next) {
+	res.render("resume", {
+		title: "Résumé",
+		heading:"Mon Résumé!"
 	})
 });
 // routing end
