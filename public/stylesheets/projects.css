@@ -17,28 +17,39 @@ body.lock-position {
 	position: relative;
 	height: 75vh !important;
 	width: 100%;
-	z-index: 2;
 	margin-top: -48px;
+	
+}
+.heading h1 {
+
+	color: #fff;
+	padding-top: calc((75vh - 1.5rem - 48px)/2);
+	z-index: 3;
+
+}
+.heading {
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	
+	height: 75vh;
+	width: 100%;
+}
+.bg {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	height: 75vh !important;
+	width: 100%;
 	background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 	background-size: cover;
   	background-repeat: no-repeat;
  	background-position: center;
 }
-#main  h1 {
-	color: #fff;
-	padding-top: calc((75vh - 1.5rem - 48px)/2);
-
-}
-.raise{
-	position: relative;
-	z-index: 6;
-	width: 100%;
-	height: 100%;
-}
 .cover {
  	position:absolute;
   	top:0;
-    z-index: 2;
+    z-index: 1;
     background-color:#000;
     background-size: cover;
     opacity: 0.2;
