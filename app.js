@@ -44,7 +44,8 @@ app.get("/", function(req, res, next) {
 });
 app.get("/academics", function(req, res, next) {
 	res.render("academics", {
-		title: "Academics"
+		title: "Academics",
+		heading:"Academics"
 	})
 });
 app.get("/projects", function(req, res, next) {
