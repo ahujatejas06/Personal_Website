@@ -10,9 +10,11 @@
   <link rel = "icon" href = "/favicon/favicon.png">
   <link rel="stylesheet" type="text/css" href="/stylesheets/home.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/footer.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/loading.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+  <% include loading.html %>
   <header>
  <nav class="nav">
         <div class="container">
@@ -310,6 +312,7 @@
           </section>
           <script src = "/javascripts/home.js"></script>
           <script src = "/javascripts/accordion.js"></script>
+          <script src = "/javascripts/loading.js"></script>
           <% include footer.html %>
     </body>
 </html>
