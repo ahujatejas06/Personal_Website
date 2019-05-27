@@ -27,7 +27,7 @@ $(window).scroll(function() {
                     $('.nav').removeClass('affix');
                   }
         });
-        $(".navlinks").on({
+$(".navlinks").on({
                     mouseenter: function () {
                       $('.active').addClass('unactive');
                       $('.active').removeClass('active');

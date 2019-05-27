@@ -1,5 +1,4 @@
-
- @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 body {
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
@@ -17,9 +16,9 @@ body.lock-position {
   top:0;
   background:black;
   z-index:2;
-  opacity: 0.15;
   height: 75vh;
   width:100vw;
+  opacity: 0.15;
 }
 .nav div.logo a {
     font-size: 1.5rem;
@@ -28,18 +27,18 @@ body.lock-position {
     font-size:1.25rem;
 }
 .nav div.main_list ul li {
-  padding-right:30px;
+	padding-right:30px;
 }
 .main {
   height: 75vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: url('https://images.pexels.com/photos/135526/pexels-photo-135526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  align-items: center;
-  flex-direction: column;
 }
 .main .main-header {
   font: 100 5rem "Quicksand", sans-serif;
@@ -59,7 +58,6 @@ body.lock-position {
     padding-left: 10px !important;
   }
 }
-
 
 
 
