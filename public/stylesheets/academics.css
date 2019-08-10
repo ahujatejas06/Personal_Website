@@ -112,7 +112,13 @@ div.background
 
 
   }
-}     
+}  
+@media screen and (max-width:899px) {
+  .block
+  {
+   margin: 25px 0; 
+  }
+}      
 
 
 
