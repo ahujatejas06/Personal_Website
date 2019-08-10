@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 body {
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
@@ -58,7 +59,60 @@ body.lock-position {
     padding-left: 10px !important;
   }
 }
+#view {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.layout{
+  margin: 50px 0;
+  max-width: 1080px;
+  max-height: 100%;
+  align-self: center;
+  display:inline-block;
+}
+.block {
+  width: 400px;
+  height: 500px;
+  border-color: black;
+  border-style: dashed;
+  padding: 0;
+  margin: 0;
+  border-width: 1px;
+  border-radius: 10px;
+}
+div.background
+{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(205,104,166);
 
+}
+.background > h3 {
+  padding-top: 20px;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.background > h6 {
+  padding: 5px 0;
+  font-size: 0.75rem;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+@media screen and (min-width:900px) {
+  .layout
+  {
+    display: inline-grid;
+    gap: 30px 50px;
+    grid-template-columns: 1fr 1fr;
+
+
+  }
+}     
 
 
 

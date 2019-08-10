@@ -19,6 +19,9 @@ $('.navTrigger').click(function () {
       }
     } 
 });
+$(document).ready(function(){
+  setPercent();
+  });
 $(window).scroll(function() {
             let height = $('.main').height() - $('.nav').height() - 35;
                 if ($(document).scrollTop() > height) {
@@ -37,3 +40,9 @@ $(".navlinks").on({
                       $('.unactive').removeClass('unactive');
                     }
                 });
+function setPercent () {
+  $('div.background').each(function() {
+      let color = $(this).data('color');
+      $(this).css('background',color);
+  });
+}
