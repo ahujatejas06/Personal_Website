@@ -17,7 +17,7 @@ body.lock-position {
   top:0;
   background:black;
   z-index:2;
-  height: 65vh;
+  height: 75vh;
   width:100vw;
   opacity: 0.15;
 }
@@ -31,7 +31,7 @@ body.lock-position {
 	padding-right:30px;
 }
 .main {
-  height: 65vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
