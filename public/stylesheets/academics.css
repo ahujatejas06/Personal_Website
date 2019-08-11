@@ -17,7 +17,7 @@ body.lock-position {
   top:0;
   background:black;
   z-index:2;
-  height: 75vh;
+  height: 65vh;
   width:100vw;
   opacity: 0.15;
 }
@@ -31,7 +31,7 @@ body.lock-position {
 	padding-right:30px;
 }
 .main {
-  height: 75vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +66,7 @@ body.lock-position {
 }
 .layout{
   margin: 50px 0;
-  max-width: 1080px;
+  max-width: 2200px;
   max-height: 100%;
   align-self: center;
   display:inline-block;
@@ -103,12 +103,42 @@ div.background
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
-@media screen and (min-width:900px) {
+@media screen and (min-width:900px) and (max-width: 1499px) {
   .layout
   {
     display: inline-grid;
     gap: 30px 50px;
     grid-template-columns: 1fr 1fr;
+
+
+  }
+}  
+@media screen and (min-width:1500px) and (max-width: 1999px){
+  .layout
+  {
+    display: inline-grid;
+    gap: 30px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+  }
+}  
+@media screen and (min-width:2000px) and (max-width:2299px)  {
+  .layout
+  {
+    display: inline-grid;
+    gap: 30px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+  }
+}  
+@media screen and (min-width:2300px)  {
+  .layout
+  {
+    display: inline-grid;
+    gap: 30px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
 
   }
