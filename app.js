@@ -4,6 +4,8 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const minify = require('express-minify');
+const sendMail = require("./mail");
+const { type } = require('os');
 let app = express();
 
 
@@ -32,8 +34,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-
 
 
 // routing start
@@ -67,7 +67,19 @@ app.get("/resume", function(req, res, next) {
 	})
 });
 // routing end
-
+app.post("/message_send", function(req,res) {
+	let {first_name, last_name,subject ,email, message} = req.body;
+	console.log("Data Received", req.body);
+	subject = "Message from " + first_name + " " + last_name + " with Subject : " + subject;
+	message = "Message Received from " + email + '\n' + subject + '\n' + message;
+	sendMail(email, subject, message, function(err, data){
+		if (err) {
+			console.log("Error Encountered");
+		} else {
+			console.log("Message Sent");
+		}
+	});
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

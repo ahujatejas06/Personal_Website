@@ -267,6 +267,8 @@ h1 {
   .hey {
     vertical-align: middle;
     margin: auto 0;
+    padding-top:60px;
+
   }
 .grid-home {
   display:block;
@@ -288,7 +290,6 @@ h1 {
   border-radius: 3%;
   margin: auto;
 }
-
 .hey > h2 {
   font-size: 4rem;
   margin: auto;

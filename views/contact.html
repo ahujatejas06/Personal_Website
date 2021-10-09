@@ -45,7 +45,35 @@
 
           <div class = "coverbg"></div>
         </section>  
-  <% include footer.html %>
+
           <script src = "/javascripts/contact.js"></script>
+          <div class = "form">
+              <form>
+                  <input type = "text" id = "first_name" placeholder="First Name">
+                  <br>
+                  <input type = "text" id = "last_name" placeholder="Last Name">
+                  <br>
+                  <div class = "separator">
+                    <input type = "email" id = "email" placeholder = "E-mail">
+                    <h5 id = "validate_email"> Please check your email.</h5>
+                  </div>
+                  <input type = "subject" id = "subject" placeholder = "Subject">
+                  <textarea name = "message" id = "text" cols = "30" rows = "10" placeholder="Message"></textarea>
+                  <input id = "submit" type = "button" value = "Send Message" onclick="send_data()">
+              </form>
+          </div>
+          <div id = "message_sent">
+              <h1>Message Sent</h1>
+            </div>
+            <div class = "handles">
+                <div class="social-btns">
+                    <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
+                    <a class="btn twitter" href="#"><i class="fa fa-twitter"></i></a>
+                    <a class="btn google" href="#"><i class="fa fa-google"></i></a>
+                    <a class="btn dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                    <a class="btn skype" href="#"><i class="fa fa-skype"></i></a>
+                </div>
+            </div>
+          <% include footer.html %>
     </body>
 </html>

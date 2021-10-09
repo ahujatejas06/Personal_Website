@@ -37,3 +37,14 @@ $(".navlinks").on({
                       $('.unactive').removeClass('unactive');
                     }
                 });
+function send_data()
+{
+  console.log("button pressed")
+  const email = $("#email").val().trim();
+  const first_name = $("#first_name").val().trim();
+  const last_name = $("#last_name").val().trim();
+  const subject = $("#subject").val().trim()
+  const message = $("#text").val().trim();
+  const data = {first_name,last_name,subject,email,message};
+  $.post("/message_send", data,"");
+}
