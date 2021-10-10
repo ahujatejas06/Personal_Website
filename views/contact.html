@@ -11,6 +11,7 @@
   <!-- <link rel="stylesheet" type="text/css" href="/stylesheets/loading.css"> -->
   <link rel="stylesheet" type="text/css" href="/stylesheets/footer.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <!--   <% include loading.html %> -->
@@ -45,33 +46,39 @@
 
           <div class = "coverbg"></div>
         </section>  
-
           <script src = "/javascripts/contact.js"></script>
-          <div class = "form">
-              <form>
-                  <input type = "text" id = "first_name" placeholder="First Name">
-                  <br>
-                  <input type = "text" id = "last_name" placeholder="Last Name">
-                  <br>
-                  <div class = "separator">
-                    <input type = "email" id = "email" placeholder = "E-mail">
-                    <h5 id = "validate_email"> Please check your email.</h5>
-                  </div>
-                  <input type = "subject" id = "subject" placeholder = "Subject">
-                  <textarea name = "message" id = "text" cols = "30" rows = "10" placeholder="Message"></textarea>
-                  <input id = "submit" type = "button" value = "Send Message" onclick="send_data()">
-              </form>
+          <div class = "grid">
+            <div class = "text">
+                <h1>Reach Out for a new project or just say hello...</h1>
+            </div>
+            <div class = "form">
+                    <form>
+                        <input type = "text" id = "first_name" placeholder="First Name">
+                        <br>
+                        <input type = "text" id = "last_name" placeholder="Last Name">
+                        <br>
+                        <div class = "separator">
+                            <input type = "email" id = "email" placeholder = "E-mail">
+                            <h5 id = "validate_email"> Please check your email.</h5>
+                        </div>
+                        <input type = "subject" id = "subject" placeholder = "Subject">
+                        <textarea name = "message" id = "text" cols = "30" rows = "10" placeholder="Message"></textarea>
+                        <input id = "submit" type = "button" value = "Send Message" onclick="send_data()">
+                    </form>
+                </div>
+
           </div>
           <div id = "message_sent">
               <h1>Message Sent</h1>
             </div>
             <div class = "handles">
+                <h1>Other Social Handles</h1>
                 <div class="social-btns">
-                    <a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="btn twitter" href="#"><i class="fa fa-twitter"></i></a>
-                    <a class="btn google" href="#"><i class="fa fa-google"></i></a>
-                    <a class="btn dribbble" href="#"><i class="fa fa-dribbble"></i></a>
-                    <a class="btn skype" href="#"><i class="fa fa-skype"></i></a>
+                    <a class="btn facebook" href="https://www.facebook.com/profile.php?id=100073251739569"><i class="fa fa-facebook"></i></a>
+                    <a class="btn twitter" href="https://twitter.com/ahujatejas06/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn github" href="https://github.com/ahujatejas06"><i class="fa fa-github"></i></a>
+                    <a class="btn instagram" href="https://www.instagram.com/ahujatejas06/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn linkedin" href="https://www.linkedin.com/in/tejas-ahuja-315411222"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
           <% include footer.html %>
