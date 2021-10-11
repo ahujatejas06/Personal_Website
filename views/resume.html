@@ -42,10 +42,27 @@
     <div class="main">
          <h1 class="main-header"><%= heading %></h1>
           </div>
-
           <div class = "coverbg"></div>
+          <h1>Will be uploaded soon...</h1>
+          <div>
+            <object
+            data='/resume.pdf'
+            type="application/pdf"
+            width="75%"
+            height="678"
+          >
+    
+            <iframe
+              src='resume.pdf'
+              width="75%"
+              height="678"
+            >
+            <p>This browser does not support PDF!</p>
+            </iframe>
+          </object>
+          </div>
         </section> 
-        <h1>Will be uploaded soon...</h1>
+        
   <% include footer.html %>
           <script src = "/javascripts/resume.js"></script>
     </body>

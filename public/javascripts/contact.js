@@ -1,3 +1,8 @@
+$(document).ready(function () {
+  if ($(this).width() < 800) {
+    $(".grid").css("display","block")
+  }
+});
 $('.navTrigger').click(function () {
     $(this).toggleClass('click');
     console.log("Clicked menu");
