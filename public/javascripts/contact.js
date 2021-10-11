@@ -1,6 +1,8 @@
 $(document).ready(function () {
   if ($(this).width() < 800) {
     $(".grid").css("display","block")
+    $(".grid").css("margin-top", "50px")
+    $(".grid > .text > h1,.handles > h1").css("font-size", "35px")
   }
 });
 $('.navTrigger').click(function () {
