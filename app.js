@@ -66,6 +66,9 @@ app.get("/resume", function(req, res, next) {
 		heading:"Mon Résumé!"
 	})
 });
+app.get("/jee-notes", function(req, res, next) {
+	res.render("jee")
+});
 // routing end
 app.post("/message_send", function(req,res) {
 	let {first_name, last_name,subject ,email, message} = req.body;
